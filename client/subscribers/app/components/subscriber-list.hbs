@@ -1,0 +1,55 @@
+<div class="header">
+  <div class="title">
+    <h1>
+      {{t "subscriberList.title"}}
+    </h1>
+    <p class="secondary">
+      {{t "subscriberList.subscriberCount"}}
+    </p>
+  </div>
+
+  <button type="button" {{on "click" this.handleAddButton}}>
+    {{svg-jar "plus"}}
+  </button>
+</div>
+
+<ul class="subscriber-list">
+  <li class="labels">
+    <div class="name secondary">
+      {{t "subscriberList.labels.fullName"}}
+    </div>
+    <div class="gender secondary">
+      {{t "subscriberList.labels.gender"}}
+    </div>
+    <div class="email secondary">
+      {{t "subscriberList.labels.email"}}
+    </div>
+    <div class="state secondary">
+      {{t "subscriberList.labels.state"}}
+    </div>
+    <div class="button-wrapper"></div>
+  </li>
+
+  {{#each this.subscribers as |subscriber|}}
+    <li class="subscriber">
+      <div class="name">
+        {{subscriber.firstName}} {{subscriber.lastName}}
+      </div>
+      <div class="gender">
+        {{t (concat "subscriberList.gender." subscriber.gender)}}
+      </div>
+      <div class="email">
+        {{subscriber.email}}
+      </div>
+      <div class="state">
+        <SubscriberList::State @subscribed={{subscriber.subscribed}} />
+      </div>
+
+      <div class="button-wrapper">
+        <button {{on "click" this.handleShowActions}}>
+          {{svg-jar "more"}}
+        </button>
+      </div>
+    </li>
+  {{/each}}
+</ul>

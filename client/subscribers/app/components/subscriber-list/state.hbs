@@ -1,0 +1,8 @@
+<div class="subscriber-list-state" data-subscribed={{@subscribed}}>
+  <div class="short">
+    {{t (concat "subscriberList.state.short." (if @subscribed "subscribed" "unsubscribed"))}}
+  </div>
+  <div class="long">
+    {{t (concat "subscriberList.state.long." (if @subscribed "subscribed" "unsubscribed"))}}
+  </div>
+</div>

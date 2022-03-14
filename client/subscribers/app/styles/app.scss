@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
+
+body {
+  color: #061c2d;
+  font-family: 'Recursive';
+  font-size: 13px;
+  line-height: 16px;
+  padding: 56px 24px 48px;
+
+  @media (min-width: 600px) {
+    padding: 120px 24px 104px;
+  }
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.secondary {
+  opacity: 0.4;
+}
+
+@import './components/module';

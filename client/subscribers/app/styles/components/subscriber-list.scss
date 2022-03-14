@@ -1,0 +1,149 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+
+  .title {
+    h1 {
+      margin: 0 0 8px;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: #66c39a;
+    border-radius: 8px;
+    border: none;
+    appearance: none;
+    cursor: pointer;
+
+    svg {
+      display: block;
+    }
+  }
+
+  @media (min-width: 760px) {
+    padding: 0 16px;
+  }
+}
+
+.subscriber-list {
+  padding: 0;
+  list-style: none;
+
+  .subscriber,
+  .labels {
+    position: relative;
+    height: 60px;
+    padding: 12px 0;
+    box-sizing: border-box;
+
+    .gender {
+      opacity: 0.4;
+      font-size: 11px;
+      padding-left: 4px;
+    }
+
+    .state {
+      position: absolute;
+      top: 14px;
+      right: 40px;
+    }
+
+    .button-wrapper {
+      position: absolute;
+      top: 18px;
+      right: 0;
+      width: 24px;
+
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        cursor: pointer;
+        border: none;
+        background: none;
+        appearance: none;
+
+        svg {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .subscriber {
+    .name,
+    .gender {
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+
+  .labels {
+    margin-bottom: 16px;
+    display: none;
+  }
+
+  @media (min-width: 760px) {
+    .subscriber,
+    .labels {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 48px;
+      padding: 8px 16px;
+
+      &:hover {
+        background: rgba(0, 0, 0, 3%);
+      }
+
+      .name {
+        width: 25%;
+      }
+
+      .gender {
+        width: 16%;
+        font-size: 13px;
+        padding-left: 0;
+      }
+
+      .email {
+        width: 30%;
+      }
+
+      .state {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 25%;
+      }
+
+      .button-wrapper {
+        position: relative;
+        top: auto;
+        right: auto;
+      }
+    }
+
+    .subscriber {
+      .gender {
+        opacity: 1;
+      }
+    }
+
+    .labels {
+      display: flex;
+    }
+  }
+}

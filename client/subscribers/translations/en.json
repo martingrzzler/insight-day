@@ -1,0 +1,26 @@
+{
+  "subscriberList": {
+    "title": "Subscriber list",
+    "subscriberCount": "5 Subscribers Total",
+    "labels": {
+      "fullName": "Full name",
+      "gender": "Gender",
+      "email": "Email Addres",
+      "state": "State"
+    },
+    "gender": {
+      "f": "Female",
+      "m": "Male"
+    },
+    "state": {
+      "short": {
+        "subscribed": "S",
+        "unsubscribed": "U"
+      },
+      "long": {
+        "subscribed": "Subscribed",
+        "unsubscribed": "Unsubscribed"
+      }
+    }
+  }
+}
