@@ -22,5 +22,4 @@ composer install
 - [01 REST Design](doc/rest.md)
 - [02 SQL (PostgreSQL)](doc/sql.md)
 - [03 Quiz App](doc/quiz-app.md)
-- [04 Research](doc/research.md)
-- [05 Tracking App](doc/tracking-app.md)
+- [04 Tracking App](doc/tracking-app.md)
