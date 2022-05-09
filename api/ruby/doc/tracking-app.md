@@ -28,7 +28,7 @@ The code should be fully functional and push your code to a new public repositor
 
 ### Bonus
 Implement which and as many of the bonus points you feel comfortable with.
-- Deploy your App to Heroku and share the link with us
-- Store the data asynchronous and redirect immediately
 - Extend/Replace the functionality with an url-shortener service
+- Store the data asynchronous and redirect immediately
 - Create a dashboard with insights/statistics per URL
+- Deploy your App to Heroku and share the link with us
