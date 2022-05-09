@@ -19,7 +19,8 @@ composer install
 
 ## Challenges
 
-- [01 REST Design](doc/rest.md)
-- [02 SQL (PostgreSQL)](doc/sql.md)
+- [01 REST Design](../doc/rest.md)
+- [02 SQL (PostgreSQL)](../doc/sql.md)
 - [03 Quiz App](doc/quiz-app.md)
-- [04 Tracking App](doc/tracking-app.md)
+- [04 Architectural Design](../doc/architectural-design.md)
+- [05 Tracking App](doc/tracking-app.md)

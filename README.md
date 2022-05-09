@@ -16,5 +16,6 @@ git clone https://github.com/YOURNAME/trial-day.git
 
 Now you can start with one of the following:
 
-- [Trial Day as Backend Developer](api/README.md).
+- [Trial Day as Backend PHP Developer](api/php/README.md).
+- [Trial Day as Backend Ruby Developer](api/ruby/README.md).
 - [Trial Day as Frontend Developer](client/README.md).
