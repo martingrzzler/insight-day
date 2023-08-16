@@ -5,13 +5,13 @@
 
 Given the following Database:
 
-Host: `ec2-54-220-215-8.eu-west-1.compute.amazonaws.com`
+Host: `ec2-176-34-236-128.eu-west-1.compute.amazonaws.com`
 
 Port: `5432`
 
 User: `trial-day`
 
-PW: `p603b779a25b633f683b230ccaa75cb01230460b84e8b14cd155cead03909bbab`
+PW: `p23be8fa51d0bb009ab27cf97242c179ac982eae25957769a2117a0642fcc7696`
 
 Database: `dbem6ff3g5orbe`
 
