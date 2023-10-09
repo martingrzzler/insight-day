@@ -11,7 +11,7 @@ Find the folder `subscribers` in this repository and install the dependencies us
 
 ### The Application
 
-The Subscribers-App is a simple app to manage newsletter subscriptions. The following link shows how the app should look like https://www.figma.com/file/PT1kRlJGjpFqttvaxjwV6L/Developer-Test-Assignment-for-Trial-Day---Javascript?node-id=9%3A772. On the main page of the app all existing subscribers are listed. All subscribers can be edited and deleted. New subscribers can be added through a form that opens in a dialog. Once a new subscriber is added, this subscriber is added to the list. A subscriber has the following properties:
+The Subscribers-App is a simple app to manage newsletter subscriptions. The following link shows how the app should look like https://www.figma.com/file/PT1kRlJGjpFqttvaxjwV6L/Insight-Day?type=design&node-id=9-772&mode=design&t=IurrqG4SEeeIM5Ht-0. On the main page of the app all existing subscribers are listed. All subscribers can be edited and deleted. New subscribers can be added through a form that opens in a dialog. Once a new subscriber is added, this subscriber is added to the list. A subscriber has the following properties:
 
 - `email` - the email address of the subscriber
 - `firstName` - the first name of the subscriber

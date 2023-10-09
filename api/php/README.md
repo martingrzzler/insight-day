@@ -1,7 +1,7 @@
 <p align="center"><a href="https://additive.eu" target="_blank"><img src="https://additive-trial-day.s3.eu-central-1.amazonaws.com/logo.png" width="400"></a></p>
 
 
-# Trial Day at ADDITIVE as Backend Developer
+# Insight Day at ADDITIVE as Backend Developer
 
 ## Installation
 
