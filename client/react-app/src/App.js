@@ -12,7 +12,7 @@ function App() {
 
   useEffect(() => {
     Promise.all([
-      axios.get('https://mocki.io/v1/265648af-c510-4308-9715-4b8cd050676c'),
+      axios.get('https://dummyjson.com/users/1'),
       timeout(1000)
     ]).then(([response]) => setUser(response.data.user));
   }, []);
