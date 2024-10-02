@@ -3,6 +3,8 @@
 
 # Tracking App
 
+Create a new repository for this challenge.
+
 
 We want you to implement a URL-Tracking service in a PHP framework of your choice.
 
