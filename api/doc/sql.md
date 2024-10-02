@@ -5,7 +5,7 @@
 
 Given the following Database:
 
-Host: `ec2-176-34-236-128.eu-west-1.compute.amazonaws.com`
+Host: `ec2-108-128-249-68.eu-west-1.compute.amazonaws.com`
 
 Port: `5432`
 
