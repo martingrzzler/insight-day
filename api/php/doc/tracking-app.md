@@ -27,7 +27,3 @@ The collected data should be persisted on a storage of your choice (Database, Fi
 ### Success criteria
 
 The code should be fully functional and push your code to a new public repository on GitHub.
-
-### Bonus
-
-Deploy your App to Heroku and share the link with us
