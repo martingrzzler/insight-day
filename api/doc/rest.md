@@ -1,8 +1,6 @@
 <p align="center"><a href="https://additive.eu" target="_blank"><img src="https://additive-trial-day.s3.eu-central-1.amazonaws.com/logo.png" width="400"></a></p>
 
-
 # 01 REST Design
-
 
 Your objective is to design a RESTful API for an offer entity and it's room prices.
 
@@ -45,14 +43,204 @@ Payload:
 
 ```json
 {
-	"offers": [
-		{
-			"id": 1,
-			"name": "Easter 2021",
-			"start_at": "2021-04-02",
-			"end_at": "2021-04-07"
-		},
-		// ... more offers
-	]
+  "offers": [
+    {
+      "id": 1,
+      "name": "Easter 2021",
+      "start_at": "2021-04-02",
+      "end_at": "2021-04-07"
+    }
+    // ... more offers
+  ]
+}
+```
+
+**Request GET `/offers/<id>`**
+
+Payload: no body, specify id via url param
+
+**Response**
+
+```json
+{
+  "offer": {
+    "id": 1,
+    "name": "Easter 2021",
+    "start_at": "2021-04-02",
+    "end_at": "2021-04-07"
+  }
+}
+```
+
+**Request POST `/offers`**
+
+Payload:
+
+```json
+{
+  "offer": {
+    "name": string
+    "start_at": datestring
+    "end_at": datestring
+  }
+}
+```
+
+**Response**
+
+Returns the created offer
+
+```json
+{
+  "offer": {
+    "id": 1,
+    "name": "Easter 2021",
+    "start_at": "2021-04-02",
+    "end_at": "2021-04-07"
+  }
+}
+```
+
+**Request PUT `/offers/<id>`**
+
+Payload:
+
+```json
+{
+  "offer": {
+    "name": string
+    "start_at": datestring
+    "end_at": datestring
+  }
+}
+```
+
+**Response**
+
+Returns the updated offer.
+
+```json
+{
+  "offer": {
+    "id": 1,
+    "name": "Updated Name",
+    "start_at": "2021-04-02",
+    "end_at": "2021-04-07"
+  }
+}
+```
+
+**Request DELETE `/offers/<id>`**
+
+Payload:
+
+**Response**
+
+Returns the deleted offer.
+
+```json
+{
+  "offer": {
+    "id": 1,
+    "name": "Deleted Offer Example",
+    "start_at": "2021-04-02",
+    "end_at": "2021-04-07"
+  }
+}
+```
+
+**Request POST `/offers/<id>/prices`**
+
+Payload:
+
+```json
+{
+	"price":
+	{
+		"room": "Double room" | "Junior Suite" | "King Suite",
+		"price": float
+	}
+}
+```
+
+**Response**
+
+Returns the created price
+
+```json
+{
+  "price": {
+    "id": 1,
+    "room": "Double room",
+    "price": 180.0
+  }
+}
+```
+
+**Request PUT `/offers/<id>/prices/<id>`**
+
+Payload:
+
+```json
+{
+	"price":
+	{
+		"room": "Double room" | "Junior Suite" | "King Suite",
+		"price": float
+	}
+}
+```
+
+**Response**
+
+Returns the updated price.
+
+```json
+{
+  "price": {
+    "id": 1,
+    "offer_id": 1,
+    "room": "Double room",
+    "price": 200.0
+  }
+}
+```
+
+**Request GET `/offers/<id>/prices`**
+
+Payload:
+
+**Response**
+
+Returns the prices for a given `offer_id`
+
+```json
+{
+  "prices": [
+    {
+      "id": 1,
+      "room": "Double room",
+      "price": 200.0
+    }
+    // more prices
+  ]
+}
+```
+
+**Request DELETE `/offers/<id>/prices/<id>`**
+
+Payload:
+
+**Response**
+
+Returns the deleted price.
+
+```json
+{
+  "price": {
+    "id": 1,
+    "room": "Double room",
+    "price": 200.0
+  }
 }
 ```
