@@ -1,6 +1,5 @@
 <p align="center"><a href="https://additive.eu" target="_blank"><img src="https://additive-trial-day.s3.eu-central-1.amazonaws.com/logo.png" width="400"></a></p>
 
-
 # Insight Day at ADDITIVE
 
 ## Installation
@@ -10,7 +9,6 @@ To start your insight day, fork this [repository](https://github.com/additive-ap
 ```
 git clone https://github.com/YOURNAME/insight-day.git
 ```
-
 
 ## Start
 
