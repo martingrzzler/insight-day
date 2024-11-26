@@ -41,11 +41,11 @@ class QuizCommand extends Command
         $name = $this->ask('What is your Name');
 
         $questions = trans('quiz.questions');
-        $i = 1;
-        while ($i <= count($questions)) {
+        $i = 0;
+        while ($i < count($questions)) {
             $answer = $this->ask($questions[$i]);
-
-            Storage::disk('local')->put('answers.txt', "$name, {$questions[$i]}, $answer");
+            Storage::disk('local')->append('answers.txt', "$name, {$questions[$i]}, $answer");
+            $i++;
         }
 
         return 0;

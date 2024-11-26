@@ -52,9 +52,10 @@ class AnswersCommand extends Command
 
         $row = explode(PHP_EOL, $content);
         foreach ($row as $key => $itemString) {
-            foreach (explode(',', $itemString) as $key => $item) {
-                $data[$key][] = $item;
+            if (empty($itemString)) {
+                continue;
             }
+            array_push($data, explode(',', $itemString));
         }
 
         return $data;
